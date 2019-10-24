@@ -1,41 +1,45 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
 	<title>TechEnglish</title>
-	<link rel="stylesheet" href="main.css">
+	<link rel="icon" type="image/x-icon" href="img/icone.png">
+	<link rel="stylesheet" href="main.css" media="screen">
 	<link href="https://fonts.googleapis.com/css?family=Fascinate+Inline|Roboto:400,500,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Baloo+Da|Bungee+Shade&display=swap" rel="stylesheet">
 </head>
 <body>
 	<main>
-		<div id="principal">
-			<header>
-				<div class="inicial">
-					<p><img class="logo" src="img/logo.png"></p>
-				</div>
-				<div id="botao">
-					<a href="#ementas">START</a>
-				</div>
-			</header>
+		<div id="trocatela">
+			<div id="principal" class="visivel">
+				<header>
+					<div>
+						<p><img class="logo" src="img/logo.png"></p>
+					</div>
+					<div id="botao">
+						<a href="#ementas" onclick="troca('ementas')">START</a>
+					</div>
+				</header>
+			</div>
 		</div>
-
-		<div id="ementas">
+		<div id="ementas" class="invisivel">
 			<div class="top">
 				<p><img class="tema" src="img/ementa.png"></p>
 			</div>
 
-			<div class="conteudo">
-				<div class="bloco1"><a href="#semestre1"><img class="escolhasemestre" src="img/primeiro.png"></a></div>
-				<div class="bloco2"><a href="#semestre2"><img class="escolhasemestre" src="img/segundo.png"></a></div>
-				<div class="bloco3"><a href="#semestre3"><img class="escolhasemestre" src="img/terceiro.png"></a></div>
-				<div class="bloco4"><a href="#semestre4"><img class="escolhasemestre" src="img/quarto.png"></a></div>
-				<div class="blocoextras"><a href="#extras"><img class="escolhaextras" src="img/extrascerto.png"></a></div>
+			<div class="semestres">
+				<a class="bloco1" href="#semestre1" onclick="troca('semestre1')"><img class="escolhasemestre" src="img/primeiro.png"></a>
+				<a class="bloco2" href="#semestre2" onclick="troca('semestre2')"><img class="escolhasemestre" src="img/segundo.png"></a>
+				<a class="bloco3" href="#semestre3" onclick="troca('semestre3')"><img class="escolhasemestre" src="img/terceiro.png"></a>
+				<a class="bloco4" href="#semestre4" onclick="troca('semestre4')"><img class="escolhasemestre" src="img/quarto.png"></a>
+				<a class="blocoextras" href="#extras" onclick="troca('extras')"><img class="escolhaextras" src="img/quiz.png"></a>
 			</div>
 		</div>
 
-		<div id="semestre1">
+		<div id="semestre1" class="invisivel">
 			<div class="alltop">
+				<div class="voltar"><a href="#ementas" onclick="troca('ementas')">COME BACK</a></div>
 				<p><img class="seme" src="img/semestre1.png"></p>
 			</div>
 
@@ -44,20 +48,20 @@
 			</div>
 
 			<div class="conteudo1">
-				<div class="first materia1"><a href="#presentcontinuos">Present Continuos</a></div>
-				<div class="materia1"><a href="#pronomes">Pronomes</a></div>
-				<div class="materia1"><a href="#numerais">Numerais</a></div>
+				<div class="second materia1"><a href="#presentcontinuous" onclick="troca('presentcontinuous')">Present Continuous</a></div>
+				<div class="materia1"><a href="#pastcontinuous" onclick="troca('pastcontinuous')">Past Continuous</a></div>
 			</div>
 
 			<div class="conteudo2">
-				<div class="first materia1"><a href="#pastcontinuos">Past Continuos</a></div>
-				<div class="materia1"><a href="#artigos">Artigos</a></div>
-				<div class="materia1"><a href="#palavras">Palavras que indicam ordem e exemplificação</a></div>
+				<div class="first materiaa1"><a href="#numerais" onclick="troca('numerais')">Numerals</a></div>
+				<div class="materiaa1"><a href="#pronomes" onclick="troca('pronomes')">Pronouns</a></div>
+				<div class="materiaa1"><a href="#artigos" onclick="troca('artigos')">Articles</a></div>
 			</div>
 		</div>
 
-		<div id="semestre2">
+		<div id="semestre2" class="invisivel">
 			<div class="alltop">
+				<div class="voltar"><a href="#ementas" onclick="troca('ementas')">COME BACK</a></div>
 				<p><img class="seme" src="img/semestre2.png"></p>
 			</div>
 
@@ -66,18 +70,19 @@
 			</div>
 
 			<div class="conteudo1">
-				<div class="second materia2"><a href="#presentsimple">Present Simple</a></div>
-				<div class="materia2"><a href="#pastsimple">Past Simple</a></div>
+				<div class="second materia2"><a href="#simplepresent" onclick="troca('simplepresent')">Simple Present</a></div>
+				<div class="materia2"><a href="#simplepast" onclick="troca('simplepast')">Simple Past</a></div>
 			</div>
 
 			<div class="conteudo2">
-				<div class="second materia2"><a href="#futuresimple">Future Simple</a></div>
-				<div class="materia2"><a href="#futureimediate">Future Imediate - Going to</a></div>
+				<div class="second materia2"><a href="#futuresimple" onclick="troca('futuresimple')">Simple Future</a></div>
+				<div class="materia2"><a href="#futureimediate" onclick="troca('futureimediate')">Immediate Future</a></div>
 			</div>
 		</div>
 
-		<div id="semestre3">
+		<div id="semestre3" class="invisivel">
 			<div class="alltop">
+				<div class="voltar"><a href="#ementas" onclick="troca('ementas')">COME BACK</a></div>
 				<p><img class="seme" src="img/semestre3.png"></p>
 			</div>
 
@@ -86,18 +91,19 @@
 			</div>
 
 			<div class="conteudo1">
-				<div class="second materia3"><a href="#would">Conditional Would</a></div>
-				<div class="materia3"><a href="#futurecontinuous">Future Continuous</a></div>
+				<div class="second materia3"><a href="#would" onclick="troca('would')">Conditional Would</a></div>
+				<div class="materia3"><a href="#futurecontinuous" onclick="troca('futurecontinuous')">Future Continuous</a></div>
 			</div>
 
 			<div class="conteudo2">
-				<div class="second materia3"><a href="#presentperfect">Present Perfect</a></div>
-				<div class="materia3"><a href="#pastperfect">Past Perfect</a></div>
+				<div class="second materia3"><a href="#presentperfect" onclick="troca('presentperfect')">Present Perfect</a></div>
+				<div class="materia3"><a href="#pastperfect" onclick="troca('pastperfect')">Past Perfect</a></div>
 			</div>
 		</div>
 
-		<div id="semestre4">
+		<div id="semestre4" class="invisivel">
 			<div class="alltop">
+				<div class="voltar"><a href="#ementas" onclick="troca('ementas')">COME BACK</a></div>
 				<p><img class="seme" src="img/semestre4.png"></p>
 			</div>
 			
@@ -106,20 +112,21 @@
 			</div>
 
 			<div class="conteudo1">
-				<div class="second materia4"><a href="#modal">Modal Verbs</a></div>
-				<div class="materia4"><a href="#tags">Question Tags</a></div>
+				<div class="second materia4"><a href="#modal" onclick="troca('modal')">Modal Verbs</a></div>
+				<div class="materia4"><a href="#tags" onclick="troca('tags')">Question Tags</a></div>
 			</div>
 
 			<div class="conteudo2">
-				<div class="first materiaa4"><a href="#passivevoice">Passive Voice</a></div>
-				<div class="materiaa4"><a href="#reported">Reported Speech</a></div>
-				<div class="materiaa4"><a href="#ifclauses">If Clauses</a></div>
+				<div class="first materiaa4"><a href="#passivevoice" onclick="troca('passivevoice')">Passive Voice</a></div>
+				<div class="materiaa4"><a href="#reported" onclick="troca('reported')">Reported Speech</a></div>
+				<div class="materiaa4"><a href="#ifclauses" onclick="troca('ifclauses')">If Clauses</a></div>
 			</div>
 		</div>
 
-		<div id="extras">
+		<div id="extras" class="invisivel">
 			<div class="alltop">
-				<p><img class="seme" src="img/extras.png"></p>
+				<div class="voltar"><a href="#ementas" onclick="troca('ementas')">COME BACK</a></div>
+				<p><img class="quiz" src="img/quiz.png"></p>
 			</div>
 			
 			<div class="escolha_img">
@@ -127,26 +134,25 @@
 			</div>
 
 			<div class="conteudo1">
-				<div class="second materia5"><a href="#songs">Songs</a></div>
-				<div class="materia5"><a href="#textinterpretation">Text Interpretation</a></div>
+				<div class="second materia5"><a href="#exercicio1" onclick="troca('exercicio1')">1° Semestre</a></div>
+				<div class="materia5"><a href="#exercicio2" onclick="troca('exercicio2')">2° Semestre</a></div>
 			</div>
 
 			<div class="conteudo2">
-				<div class="second materia5"><a href="#dialogues">Diolagues</a></div>
-				<div class="materia5"><a href="#links">Movies/Series</a></div>
+				<div class="second materia5"><a href="#exercicio3" onclick="troca('exercicio3')">3° Semestre</a></div>
+				<div class="materia5"><a href="#exercicio4" onclick="troca('exercicio4')">4° Semestre</a></div>
 			</div>
 		</div>
 
-		<div id="presentcontinuos">
+		<div id="presentcontinuous" class="invisivel">
 			<div class="alltop">
-				<p class="teste">PRESENT CONTINUOS</p>
+				<div class="voltar"><a href="#semestre1" onclick="troca('semestre1')">COME BACK</a></div>
+				<p><img class="cont" src="img/presentcontinuous.png"></p>
 			</div>
 
 			<div class="texto">
 				<p class="explica">
-					O tempo verbal present continuous é usado para expressar ações que estão acontecendo no momento. 
-					O present continuous de qualquer verbo é composto por duas partes: <span>presente do verbo to be + present participle do verbo principal.</span> 
-					A forma do present participle é esta: <span>radical + ing</span>
+					O Present Continuous é um tempo verbal usado para indicar ações que estão em progresso no presente, no momento da fala. Ele é empregado para falar sobre situações temporárias, ações contínuas que estão acontecendo. O present continuous é composto por duas partes: <span> presente simples do verbo to be + verbo principal com ing.</span>
 				</p>
 				<p class="exemplo">Exemples: cutting (cut), doing (do), drinking (drink), going (go).</p>
 
@@ -170,7 +176,7 @@
 
 				<div class="divisao">
 					<p class="explica"> <span>></span> A construção do Present Contínuous na forma <span>interrogativa</span> deve ser da seguinte a forma:</p>
-					<p class="modelo">Verbo to be + sujeito + verbo com “ing” + complemento</p>
+					<p class="modelo">Verbo to be + sujeito + verbo com “ing” + complemento + ?</p>
 					<p class="exemplo">Exemples:</p>
 					<p class="explica">Are you running in the city? (Você está correndo pela cidade?)</p>
 					<p class="explica">Is she making a cake? (Ela está fazendo um bolo?)</p>
@@ -179,16 +185,872 @@
 
 				<div class="divisao">
 					<p class="titulo">ATTENTION THE RULES</p>
-					<p class="explica"> <span>1-</span> Quando o verbo principal terminar com a letra <span>"e"</span> precedido de uma consoante, deve-se retira-la e acrescentar o “ing” no lugar.</p>
-					<p class="exemplo">Exemples:</p>
-					<p class="explica">To ride (andar) <span>></span> riding</p>
-					<p class="explica">To dance (dançar) <span>></span> dancing</p>
-					<p class="explica">To take (pegar, tomar) <span>></span> taking</p>
-					<p class="exemplo">Exceção: verbo to be (ser, estar) <span>></span> being</p>
+					<p class="traducao">(atenção às regras)</p>
+
+					<div class="divisao">
+						<p class="explica"> <span>1-</span> Quando o verbo principal terminar com a letra <span>"e"</span> precedido de uma consoante, deve-se retira-la e acrescentar o “ing” no lugar.</p>
+						<p class="exemplo">Exemples:</p>
+						<p class="explica">to ride (andar) <span>></span> riding</p>
+						<p class="explica">to dance (dançar) <span>></span> dancing</p>
+						<p class="explica">to take (pegar, tomar) <span>></span> taking</p>
+						<p class="exemplo"><span>Exceção:</span> verbo to be (ser, estar) <span>></span> being</p>
+					</div>		
+
+					<div class="divisao">
+						<p class="explica"> <span>2-</span> Quando o verbo for monossílabo terminado em <span>CVC (consoante + vogal + consoante)</span>, deve-se dobrar a última letra antes de se acrescentar o “ing”.</p>
+						<p class="exemplo">Exemples:</p>
+						<p class="explica">to swim (nadar) <span>></span> swimming</p>
+						<p class="explica">to come (vir) <span>></span> comming</p>
+						<p class="explica">to run (correr) <span>></span> running</p>
+						<p class="explica">to put (colocar) <span>></span> putting</p>
+						<p class="exemplo"><span>Exceção 1:</span> Verbo to travel (viajar) <span>></span> traveling (americano)/travelling (britânico)</p>
+						<p class="exemplo"><span>Exceção 2:</span> Quando a última consoante for <span>w ou x</span> ela não será dobrada.</p>
+						<p class="exemplo"><span>Exceção 3:</span> Se a sílaba tônica for a primeira, não se dobra a letra final, acrescenta-se somente o "ing".</p>
+					</div>	
+
+					<div class="divisao">
+						<p class="explica"> <span>3-</span> Quando o verbo terminar com “ie”, deve-se troca-la por “y” e acrescentar o “ing”.</p>
+						<p class="exemplo">Exemples:</p>
+						<p class="explica">to die (morrer) <span>></span> dying</p>
+						<p class="explica">to lie (mentir) <span>></span> lying</p>
+					</div>
 				</div>
 
+				<div class="divisao">
+					<p class="titulo">TIPS TO HELP YOU</p>
+					<p class="traducao">(dicas para ajudar você)</p>
+
+					<div class="tabelas">
+						<p><img class="tabela" src="img/verboing.png"></p>
+						<p><img class="tabela" src="img/verbotobe.png"></p>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="voltar"><a href="#semestre1" onclick="troca('semestre1')">COME BACK</a></div>
+				<div class="goexerc"><a href="#exercicio1" onclick="troca('exercicio1')">QUIZ</a></div>
 			</div>
 		</div>
+
+		<div id="pastcontinuous" class="invisivel">
+			<div class="alltop">
+				<div class="voltar"><a href="#semestre1" onclick="troca('semestre1')">COME BACK</a></div>
+				<p><img class="cont" src="img/pastcontinuous.png"></p>
+			</div>
+
+			<div class="texto">
+				<p class="explica">
+					O Past Continuous (Passado Contínuo) é um tempo verbal utilizado para indicar ações contínuas que ocorreram no passado. O past continuous é composto por duas partes: <span> passado simples do verbo to be + verbo principal com ing.</span>
+				</p>
+				<p class="exemplo">Exemples: cutting (cut), doing (do), drinking (drink), going (go).</p>
+
+				<div class="divisao">
+					<p class="explica"> <span>></span> A construção do Past Continuous na forma <span>afirmativa</span> deve ser da seguinte forma:</p>
+					<p class="modelo">Sujeito + verbo to be no passado (was/were) + verbo com “ing” + complemento</p>
+					<p class="exemplo">Exemples:</p>
+					<p class="explica">She was sleeping  yesterday night. (Ela estava dormindo ontem à noite)</p>
+					<p class="explica">He was swimming at the college. (Ele estava nadando na universidade)</p>
+					<p class="explica">They were drinking a lot yesterday night. (Eles estavam bebendo muito noite passada)</p>
+				</div>
+
+				<div class="divisao">
+					<p class="explica"> <span>></span> A construção do Past Contínuous na forma <span>negativa</span> deve ser da seguinte a forma:</p>
+					<p class="modelo">Sujeito + verbo to be no passado (was/were) + not + verbo com “ing” + complemento</p>
+					<p class="exemplo">Exemples:</p>
+					<p class="explica">She was not sleeping  yesterday night. (Ela não estava dormindo ontem à noite)</p>
+					<p class="explica">They were not drinking a lot yesterday night. (Eles não estavam bebendo muito noite passada)</p>
+					<p class="explica">He was’t swimming at the college. (Ele não estava nadando na universidade)</p>
+				</div>
+
+				<div class="divisao">
+					<p class="explica"> <span>></span> A construção do Past Contínuous na forma <span>interrogativa</span> deve ser da seguinte a forma:</p>
+					<p class="modelo">Verbo to be no passado (was/were) + sujeito + verbo com “ing” + complemento + ?</p>
+					<p class="exemplo">Exemples:</p>
+					<p class="explica">Was she sleeping  yesterday night? (Ela estava dormindo ontem à noite?)</p>
+					<p class="explica">Was he swimming at the college? (Ele estava nadando na universidade?)</p>
+					<p class="explica">Were they  drinking a lot yesterday night? (Eles estavam bebendo muito noite passada?)</p>
+				</div>
+
+				<div class="divisao">
+					<p class="titulo">ATTENTION THE RULES</p>
+					<p class="traducao">(atenção às regras)</p>
+
+					<div class="divisao">
+						<p class="explica"> <span>1-</span> Quando o verbo principal terminar com a letra <span>"e"</span> precedido de uma consoante, deve-se retira-la e acrescentar o “ing” no lugar.</p>
+						<p class="exemplo">Exemples:</p>
+						<p class="explica">to ride (andar) <span>></span> riding</p>
+						<p class="explica">to dance (dançar) <span>></span> dancing</p>
+						<p class="explica">to take (pegar, tomar) <span>></span> taking</p>
+						<p class="exemplo"><span>Exceção:</span> verbo to be (ser, estar) <span>></span> being</p>
+					</div>		
+
+					<div class="divisao">
+						<p class="explica"> <span>2-</span> Quando o verbo for monossílabo terminado em <span>CVC (consoante + vogal + consoante)</span>, deve-se dobrar a última letra antes de se acrescentar o “ing”.</p>
+						<p class="exemplo">Exemples:</p>
+						<p class="explica">to swim (nadar) <span>></span> swimming</p>
+						<p class="explica">to come (vir) <span>></span> comming</p>
+						<p class="explica">to run (correr) <span>></span> running</p>
+						<p class="explica">to put (colocar) <span>></span> putting</p>
+						<p class="exemplo"><span>Exceção 1:</span> Verbo to travel (viajar) <span>></span> traveling (americano)/travelling (britânico)</p>
+						<p class="exemplo"><span>Exceção 2:</span> Quando a última consoante for <span>w ou x</span> ela não será dobrada.</p>
+						<p class="exemplo"><span>Exceção 3:</span> Se a sílaba tônica for a primeira, não se dobra a letra final, acrescenta-se somente o "ing".</p>
+					</div>	
+
+					<div class="divisao">
+						<p class="explica"> <span>3-</span> Quando o verbo terminar com “ie”, deve-se troca-la por “y” e acrescentar o “ing”.</p>
+						<p class="exemplo">Exemples:</p>
+						<p class="explica">to die (morrer) <span>></span> dying</p>
+						<p class="explica">to lie (mentir) <span>></span> lying</p>
+					</div>
+				</div>
+
+				<div class="divisao">
+					<p class="titulo">TIPS TO HELP YOU</p>
+					<p class="traducao">(dicas para ajudar você)</p>
+
+					<div class="tabelas">
+						<p><img class="tabela" src="img/verboing2.png"></p>
+						<p><img class="tabela" src="img/verbotobepast.png"></p>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="voltar"><a href="#semestre1" onclick="troca('semestre1')">COME BACK</a></div>
+				<div class="goexerc"><a href="#exercicio1" onclick="troca('exercicio1')">QUIZ</a></div>
+			</div>
+		</div>
+
+		<div id="pronomes" class="invisivel">
+			<div class="alltop">
+				<div class="voltar"><a href="#semestre1" onclick="troca('semestre1')">COME BACK</a></div>
+				<p><img class="cont2" src="img/pronouns.png"></p>
+			</div>
+
+			<div class="texto">
+				<div class="divisao">
+					<p class="explica">Os pronomes (pronouns) na língua inglesa substituem ou acompanham substantivos ou outros pronomes em uma frase. São classificados em:</p>
+					<div class="resp">
+						<p><a class="link" href="#pessoais"><span> > </span> Personal Pronouns (Pronomes Pessoais)</a></p>
+						<p><a class="link" href="#posseivos"><span> > </span> Possessive Pronouns (Pronomes Possessivos)</a></p>
+						<p><a class="link" href="#reflexivos"><span> > </span> Reflexive Pronouns (Pronomes Reflexivos)</a></p>
+						<p><a class="link" href="#demonstrativo"><span> > </span> Demonstrative Pronouns (Pronomes Demonstrativos)</a></p>
+						<p><a class="link" href="#indefinidos"><span> > </span> Indefinite Pronouns (Pronomes Indefinidos)</a></p>
+						<p><a class="link" href="#relativos"><span> > </span> Relative Pronouns (Pronomes Relativos)</a></p>
+						<p><a class="link" href="#interrogativos"><span> > </span> Interrogative Pronouns (Pronomes Interrogativos)</a></p>
+					</div>
+				</div>
+
+				<div id="pessoais" class="divisao2">
+					<p class="titulo">Personal Pronouns (Pronomes Pessoais)</p>
+					<p class="explica">São termos que indicam lugares pessoas e objetos. Têm a seguinte classificação:</p>
+
+					<p class="explica"><span>Subject Pronouns (Pronomes Pessoais do Caso Reto):</span> O pronome funciona como o sujeito da frase.</p>
+					<p class="explica"><span>Exemplo: He </span>gave her a dog. (Ele deu um cachorro a ela)</p>
+					<p class="divisao"><img class="tabela2" src="img/subjectpronouns.png"></p>
+
+					<p class="explica"><span>Object Pronouns (Pronomes Pessoais do Caso Oblíquo):</span> Neste caso, o pronome funciona como o objeto da frase.</p>
+					<p class="explica"><span>Exemplo:</span> He gave <span>her</span> a dog. (Ele deu um cachorro a ela)</p>
+					<p class="divisao"><img class="tabela2" src="img/objectpronouns.png"></p>
+				</div>
+
+				<div id="posseivos" class="divisao2">
+					<p class="titulo">Possessive Pronouns (Pronomes Possessivos)</p>
+					<p class="explica">São classificados em Possessive Adjectives (Pronomes Adjetivos) e Possessive Pronouns (Pronomes Substantivos). Assim como o próprio nome diz, sugere a posse de algo por alguém ou alguma coisa.</p>
+
+					<p class="explica"><span>Possessive Adjectives (Pronomes Possesivos Adjetivos):</span> Sempre são acompanhados por substantivos, que são quem os determinam em plural ou singular, já que não são flexionados como na língua portuguesa.</p>
+					<p class="explica"><span>Exemplo: My </span>dog swims in the pool. (Meu cachorro nada na piscina)</p>
+					<p class="divisao"><img class="tabela2" src="img/possessivepronouns.png"></p>
+
+					<p class="explica"><span>Possessive Pronouns (Pronomes Possesivos Substantivos): </span> Têm a finalidade de substituir o substantivo, diferentes dos Possessive Adjectives, que acompanham. Eles também não são flexionados em singular ou plural, a frase é quem estabelece isso.</p>
+					<p class="explica"><span>Exemplo: </span>These dogs are <span>mine.</span> (Os cachorros são meus)</p>
+					<p class="divisao"><img class="tabela2" src="img/possessiveadjectives.png"></p>
+				</div>
+
+				<div id="reflexivos" class="divisao2">
+					<p class="titulo">Reflexive Pronouns (Pronomes Reflexivos)</p>
+					<p class="explica"><span>Reflexive Pronouns (Pronomes Reflexivos)</span> sempre são acompanhados por substantivos, que são quem os determinam em plural ou singular, já que não são flexionados como na língua portuguesa. Aparecem sempre após o verbo concordando com o sujeito da oração. Os reflexives pronouns tem terminação <span>self</span>, quando a pessoa estiver no singular e <span>selves</span> quando a pessoa estiver no plural.</p>
+					<p class="explica"><span>Exemplo: </span>I promised <span>myself</span> to make you happy forever. (Eu prometi para mim mesmo que te faria feliz para sempre)</p>
+					<p class="divisao"><img class="tabela2" src="img/pronomesreflexivos.png"></p>
+				</div>
+
+				<div id="demonstrativo" class="divisao2">
+					<p class="titulo">Demonstrative Pronouns (Pronomes Demonstrativos)</p>
+					<p class="explica">Indicam algo, pessoa, lugar ou objeto e, são classificados de acordo com a função sintática que exercem na frase, são classificados em:</p>
+
+					<p class="explica"><span>Demonstrative Pronouns (pronomes demonstrativos substantivos):</span> Substituem o substantivo.</p>
+					<p class="explica"><span>Exemplo: </span>Take <span>this</span> cellphone. (Pegue este celular)</p>
+
+					<p class="explica"><span>Demonstrative Adjectives (pronomes demonstrativos adjetivos):</span> Descrevem o substantivo.</p>
+					<p class="explica"><span>Exemplo: These </span>books are yours. (Esses livros são seus)</p>
+					<p class="divisao"><img class="tabela3" src="img/demonstrativepronouns.png"></p>
+				</div>
+
+				<div id="indefinidos" class="divisao2">
+					<p class="titulo">Indefinite Pronouns (Pronomes Indefinidos)</p>
+					<p class="explica">Substituem ou acompanham o substantivo, de maneira imprecisa ou indeterminada. São classificados em:</p>
+
+					<p class="explica"><span>Indefinite Pronouns (pronomes indefinidos substantivos):</span> Substituem os substantivos.</p>
+					<p class="explica"><span>Exemplo: </span>I need  <span>somebody</span> now. (Eu preciso de alguém agora)</p>
+
+					<p class="explica"><span>Indefinite Adjectives (pronomes indefinidos adjetivos):</span> Qualificam os substantivos.</p>
+					<p class="explica"><span>Exemplo: Everything </span>mine. (Tudo meu)</p>
+					<p class="divisao"><img class="tabela4" src="img/indefinitepronouns.png"></p>
+				</div>
+
+				<div id="relativos" class="divisao2">
+					<p class="titulo">Relative Pronouns (Pronomes Relativos)</p>
+					<p class="explica">Eles exercem a função de sujeito ou de objeto na frase.</p>
+					<p class="explica"><span>Exemplo: What </span> are you doing now? (O que você esta fazendo agora?)</p>
+					<p class="divisao"><img class="tabela2" src="img/relativepronouns.png"></p>
+				</div>
+
+				<div id="interrogativos" class="divisao2">
+					<p class="titulo">Interrogative Pronouns (Pronomes Interrogativos)</p>
+					<p class="explica">Também conhecidos como “questions words”, os Interrogative Pronouns são termos utilizados para perguntas.</p>
+					<p class="explica"><span>Exemplo: What </span>is your name?(Qual é seu nome?)</p>
+					<p class="explica"><span>Exemplo: How </span>deep is your love? (Quão profundo é o seu amor?)</p>
+					<p class="divisao"><img class="tabela2" src="img/interrogativepronouns.png"></p>
+				</div>
+			</div>
+			<div>
+				<div class="voltar"><a href="#semestre1" onclick="troca('semestre1')">COME BACK</a></div>
+			</div>
+		</div>
+
+
+		<div id="artigos" class="invisivel">
+			<div class="alltop">
+				<div class="voltar"><a href="#semestre1" onclick="troca('semestre1')">COME BACK</a></div>
+				<p><img class="cont2" src="img/articles.png"></p>
+			</div>
+
+			<div class="texto">
+				<p class="explica">
+					Os artigos são sempre usados antes de substantivos.  Na língua inglesa existem três artigos, são eles: <span>a, an, the.</span> Os artigos são classificados em:
+				</p>
+				
+				<div class="divisao">
+					<p class="titulo">ARTIGOS DEFINIDOS</p>
+					<div class="divisao">
+						<p class="explica">No inglês há apenas um artigo definido, o  <span>the</span> ele não se difere para palavras masculinas ou femininas, no singular ou no plural, é o mesmo para todos. É utilizado para se referir a algo específico.</p>
+						<p class="exemplo">Exemples:</p>
+						<p class="explica">The cats (Os gatos)</p>
+						<p class="explica">The man (O homem)</p>
+						<p class="explica">The bird (O pássaro)</p>
+						<p class="explica">The women (As mulheres)</p>
+						<p class="exemplo">Para o uso dele existe algumas regras:</p>
+						<p class="explica"><span>></span> Não utiliza-lo antes de nomes próprios.</p>
+						<p class="explica"><span>></span> Não utiliza-lo ao falar de idiomas.</p>
+						<p class="explica"><span>></span> Não utiliza-lo ao falar frases com sentido generalizado.</p>
+					</div>
+				</div>
+
+				<div class="divisao">
+					<p class="titulo">ARTIGOS INDEFINIDOS</p>
+					<div class="divisao">
+						<p class="explica">Os artigos indefinidos da língua inglesa são o <span>a</span> e o <span>an</span>, que diferente do the, apenas serão utilizados acompanhando palavras no singular e quando está se referindo a algo que não é específico. A diferença é que o <span>a</span> é usado para palavras que começam com consoantes e o <span>an</span> para palavras que começam com vogais.</p>
+						<p class="exemplo">Exemples:</p>
+						<p class="explica">A girl (Uma menina)</p>
+						<p class="explica">An apple (Uma maçã)</p>
+						<p class="explica">A bird (Um pássaro)</p>
+						<p class="explica">An animal (Um animal)</p>
+						<p class="exemplo">Para o uso deles existem algumas regras:</p>
+						<p class="explica"><span>></span> Não utilize a e an para substantivos no plural.</p>
+						<p class="explica"><span>></span> Não utilize o a e an para falar de substantivos incontáveis, ou seja, aqueles que não conseguimos contar a quantidade. Exemplo: water, money, music, salt.</p>
+						<p class="explica"><span>></span> Para falar do plural em artigos indefinidos, deve-se usar “some” para palavras incontáveis e “many” para as contáveis. Exemplo: some milk, many dogs.</p>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="voltar"><a href="#semestre1" onclick="troca('semestre1')">COME BACK</a></div>
+				<div class="goexerc"><a href="#exercicio1" onclick="troca('exercicio1')">QUIZ</a></div>
+			</div>
+		</div>
+
+
+		<div id="numerais" class="invisivel">
+			<div class="alltop">
+				<div class="voltar"><a href="#semestre1" onclick="troca('semestre1')">COME BACK</a></div>
+				<p><img class="cont2" src="img/numerals.png"></p>
+			</div>
+
+			<div class="texto">
+				<p class="explica">
+					Os números cardinais expressam quantidade, como 1 (um), 2 (dois), 3 (três), já os números ordinais expressão uma ordem ou colocação, como 1º (primeiro), 2º (segundo), 3º (terceiro). 
+				</p>
+				
+				<div class="divisao">
+					<p class="titulo">ATTENTION THE RULES</p>
+					<p class="traducao">(atenção às regras)</p>
+					<div>
+						<p class="explica">Para os cardinais de 1 ao 12, não há uma regra, cada um tem seu próprio nome. Para os ordinais, não há regra até o 3º, depois começa a acrescentar “th” em sua terminação.</p>
+						<img class="tabela5" src="img/tabelanum1.png">
+					</div>
+
+					<div class="divisao">
+						<p class="explica">Para os cardinais de 13 ao 19, acrescenta-se “teen”	em sua terminação. Para os ordinais, continua a acrescentar “th” em sua terminação.</p>
+						<img class="tabela3" src="img/tabelanum2.png">
+					</div>
+
+					<div class="divisao">
+						<p class="explica">A partir do cardinal numero 20, muda-se apenas o nome da dezena e acrescenta-se a unidade na frente. Para os ordinais, a partir do 20º (vigésimo) acrescenta-se “ieth” na terminação das dezenas, e quando for acrescentar uma unidade, a dezena escreve-se como cardinal e a unicade como ordinal.</p>
+						<img class="tabela5" src="img/tabelanum3.png">
+					</div>
+
+					<div class="divisao">
+						<p class="explica">Para os cardinais de 100 a diante, coloca-se primeiro as centenas, depois as dezenas e depois as unidades. Para os ordinais acima do 100º (centésimo), apenas o ultimo número fica na forma ordinal.</p>
+						<img class="tabela3" src="img/tabelanum4.png">
+					</div>
+
+					<div class="divisao">
+						<p class="explica">Para formar números cardinais a partir de cem (one hundred), é escrito primeiro as centenas, depois as dezenas e depois as unidades. </p>
+						<p class="exemplo">Exemplo: quatrocentos e sessenta e sete (467) <span>></span> four hundred and sixty-seven.</p>
+
+						<p class="explica">Para mil, milhão e bilhão, a regra é a mesma.</p>
+						<p class="exemplo">Exemplo: mil duzentos e trinta e cinco (1235) <span>></span> one thousand two hundred and thirty five.</p>
+
+						<p class="explica">Para formar os números ordinais a partir do centésimo (100º), coloca-se apenas o último número na forma ordinal: centésimo vigésimo (120º) é one hundred twentieth (120th), octigentésimo vigésimo nono (829º) é eight hundred twenty-nineth (829th), por exemplo. O mesmo vale para os números a partir do milésimo (thousandth), milionésimo (milionth), bilionésimo (billionth) e assim por diante.</p>
+						<p class="exemplo">Exemplo: 100 (One/a hundred) <span>></span> 100th (One hundredth)</p>
+						<p class="exemplo">Exemplo: 1000 (One/a thousand) <span>></span> 1000th (One thousandth)</p>
+						<p class="exemplo">Exemplo: 1000000 (One/a million) <span>></span> 1000000th (One millionth)</p>
+						<p class="exemplo">Exemplo: 1000000000 (One/a billion) <span>></span> 1000000000th (One billionth)</p>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="voltar"><a href="#semestre1" onclick="troca('semestre1')">COME BACK</a></div>
+				<div class="goexerc"><a href="#exercicio1" onclick="troca('exercicio1')">QUIZ</a></div>
+			</div>
+		</div>
+
+
+		<div id="simplepresent" class="invisivel">
+			<div class="alltop">
+				<div class="voltar"><a href="#semestre2" onclick="troca('semestre2')">COME BACK</a></div>
+				<p><img class="cont" src="img/simplepresent.png"></p>
+			</div>
+
+			<div class="texto">
+				<p class="explica2">
+				O Simple Present é uma forma simples do presente, como o próprio nome diz. Serve para indicar coisas que ocorrem no dia-a-dia. É equivalente ao presente do indicativo na língua portuguesa. Usamos para indicar ações que ocorrem no presente. Também usamos para expressar desejos, sentimentos e opiniões.</p>
+				<p class="exemplo">Usa-se os advérbios para indicar a frequência de uma ação, os mais usados são:</p>
+				<p class="divisao3"><img class="tabela5" src="img/adverbiossimplepresent.png"></p>
+				<p class="exemplo">Exemples:</p>
+				<p class="explica2"><span>></span> I go to your house <span>now</span>. (Eu vou para sua casa agora)</p>
+				<p class="explica2"><span>></span> We  <span>always</span> wear pink T-shirt on Wednesdays. (Nós sempre vestimos camiseta rosa nas quartas-feiras)</p>
+				<p class="explica2"><span>></span> They play soccer <span>every day</span>. (Eles jogam futebol todos os dias)</p>
+				
+				<div class="divisao3">
+					<p class="titulo2">ATTENTION THE RULES</p>
+					<p class="traducao">(atenção às regras)</p>
+					<div class="divisao3">
+						<p class="explica2"><span>1- </span>Quando o verbo se referir aos pronomes <span>he, she e it</span> (3° pessoa do singular) acrescenta-se <span>S</span> ao final dos verbos.</p>
+						<p class="exemplo">Exemples:</p>
+						<p class="explica2">Work <span>></span> Works (Trabalhar)</p>
+						<p class="explica2">Read <span>></span> Reads (Ler)</p>
+						<p class="explica2">Dance <span>></span> Dances (Dançar)</p>
+						<p class="exemplo">Exemples:</p>
+						<p class="explica"><span>></span> He <span>works</span> here. (Ele trabalha aqui)</p>
+						<p class="explica"><span>></span> She <span>speaks</span> English very well. (Ela fala inglês muito bem)</p>
+					</div>
+
+					<div class="divisao3">
+						<p class="explica2"><span>2- </span>Quando o verbo se referir aos pronomes <span>he, she e it</span> (3° pessoa do singular) e tiver terminação <span>ss, sh, ch, x, o e z</span> acrescenta-se <span>es</span> ao final.</p>
+						<p class="exemplo">Exemples:</p>
+						<p class="explica2">Go <span>></span> Goes (Ir)</p>
+						<p class="explica2">Kiss <span>></span> Kisses (Beijar)</p>
+						<p class="explica2">Wash <span>></span> Washes (Lavar)</p>
+						<p class="exemplo">Exemples:</p>
+						<p class="explica"><span>></span> He always <span>kisses</span> my sister before leaving. (Ele sempre beija minha irmã antes de sair)</p>
+						<p class="explica"><span>></span> She never <span>goes</span> to China on vacation. (Ela nunca vai para a China nas férias)</p>
+					</div>
+
+					<div class="divisao3">
+						<p class="explica2"><span>3- </span>Quando o verbo se referir aos pronomes <span>he, she e it</span> (3° pessoa do singular) e a terminação do for em <span>Y</span> tira-se o Y e acrescenta <span>ies.</span></p>
+						<p class="exemplo">Exemples:</p>
+						<p class="explica2">Cry <span>></span> Cries (Chorar)</p>
+						<p class="explica2">Study <span>></span> Studies (Estudar)</p>
+						<p class="explica2">Fly <span>></span> Flies (Voar)</p>
+						<p class="exemplo">Exemples:</p>
+						<p class="explica"><span>></span> He <span>studies</span> math every day. (Ele estuda matemática todos os dias)</p>
+						<p class="explica"><span>></span> She always <span>tries</span> to do this exercise. (Ela sempre tenta fazer esse exercício)</p>
+						<p class="explica"><span>Exceção:</span> Caso o verbo tenha terminação em  <span>Y</span> mas for precedido de uma vogal, apenas acrescenta-se apenas o <span>S</span> ao final.</p>
+						<p class="explica2">Play <span>></span> Plays (Jogar)</p>
+						<p class="explica2">Say <span>></span> Says (Dizer)</p>
+						<p class="explica2">Stay <span>></span> Stays (Ficar)</p>
+					</div>
+				</div>
+
+				<div class="divisao3">
+					<p class="titulo2">AFFIRMATIVE FORM</p>
+					<p class="traducao">(forma afirmativa)</p>
+					<p class="explica2">A construção do Simple Present na forma afirmativa deve ser da seguinte forma:</p>
+					<p class="modelo2">Sujeito + verbo principal + complemento</p>
+					<div class="divisao3">
+						<p class="explica2">Como regra geral, para conjugar um verbo no Simple Present, basta deixar no infinitivo (sem o to) no caso dos pronomes <span>I, you, we e they</span> e acrescentar s, es ou ies no caso dos pronomes <span>he, she e it.</span></p>
+						<p class="exemplo">Exemples:</p>
+						<p class="explica2">I <span>work</span> at school. (Eu trabalho na escola)</p>
+						<p class="explica2">He <span>dances</span> funk very well. (Ele dança funk muito bem)</p>
+						<p class="explica2">We <span>study</span> English on fridays. (Nós estudamos inglês nas sextas)</p>
+					</div>
+				</div>
+
+				<div class="divisao3">
+					<p class="titulo2">NEGATIVE FORM</p>
+					<p class="traducao">(forma negativa)</p>
+					<p class="explica2">A construção do Simple Present na forma negativa deve ser da seguinte forma:</p>
+					<p class="modelo2">Sujeito + verbo auxiliar + not + verbo principal + complemento</p>
+
+					<div class="divisao3">
+						<p class="explica2">A forma negativa do Simple Present é formada com o uso dos verbos auxiliares <span>do e does.</span></p>
+						<p class="explica2"><span>Do: </span> I, you, we e they.</p>
+						<p class="explica2"><span>Does: </span> He, she e it.</p>
+						<p class="exemplo">O verbo é sempre usado no infinitivo, mesmo quando se trata da 3° pessoa do singular (he, she, it).</p>
+						<p class="explica2">As frases negativas podem ser escritas na forma completa ou abreviada:</p>
+						<p class="explica">Do not <span>></span> Don't</p>
+						<p class="explica">Does not <span>></span> Doesn't</p>
+
+						<p class="exemplo">Exemples:</p>
+						<p class="explica2">I <span> do not</span> live in Brazil. (Eu não moro no Brasil)</p>
+						<p class="explica2">He <span>does not</span> teach Spanish at the university. (Ele não ensina espanhol na universidade)</p>
+						<p class="explica2">She <span>doesn't</span> watch TV every day. (Ela não assiste TV todos os dias)</p>
+						<p class="explica2">They <span>don't</span> prefer Italian food. (Eles não preferem comida italiana)</p>
+					</div>
+				</div>
+
+				<div class="divisao3">
+					<p class="titulo2">INTERROGATIVE FORM</p>
+					<p class="traducao">(forma interrogativa)</p>
+					<p class="explica2">A construção do Simple Present na forma interrogativa deve ser da seguinte forma:</p>
+					<p class="modelo2">Verbo auxiliar + sujeito + verbo principal + complemento + ?</p>
+
+					<div class="divisao3">
+						<p class="explica2">A forma interrogativa do Simple Present é formada com o uso dos verbos auxiliares <span>do e does</span> assim como na forma negativa.</p>
+						<p class="explica2"><span>Do: </span> I, you, we e they.</p>
+						<p class="explica2"><span>Does: </span> He, she e it.</p>
+						<p class="exemplo">O verbo é sempre usado no infinitivo, mesmo quando se trata da 3° pessoa do singular (he, she, it).</p>
+						<p class="explica2">Nas frases interrogativas o verbo auxiliar inicia a frase.</p>
+						<p class="exemplo">Exemples:</p>
+						<p class="explica2"><span>Does</span> he teach Spanish at the university? (Ele ensina espanhol na universidade?)</p>
+						<p class="explica2"><span>Do</span> you arrive late? (Você chega atrasado?)</p>
+						<p class="explica2"><span>Does</span> she go to the gym on weekends? (Ela vai à academia aos fins de semana?)</p>
+						<p class="explica2"><span>Do</span> you prefer soda or juice? (Você prefere refrigerante ou suco?)</p>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="voltar"><a href="#semestre2" onclick="troca('semestre2')">COME BACK</a></div>
+				<div class="goexerc"><a href="#exercicio2" onclick="troca('exercicio2')">QUIZ</a></div>
+			</div>
+		</div>
+
+		<div id="simplepast" class="invisivel">
+			<div class="alltop">
+				<div class="voltar"><a href="#semestre2" onclick="troca('semestre2')">COME BACK</a></div>
+				<p><img class="cont" src="img/simplepast.png"></p>
+			</div>
+
+			<div class="texto">
+				<p class="explica2">O Simple Past é usado para indicar ações passadas já concluídas, ou seja, para falar de fatos que já aconteceram, que começaram e terminaram no passado.</p>
+				<p class="exemplo">Usa-se algumas expressões temporais para indicar a frequência de uma ação, as mais usados são:</p>
+				<p class="divisao3"><img class="tabela3" src="img/expressoes.png"></p>
+				<p class="exemplo">Exemples:</p>
+				<p class="explica2"><span>></span> I called you three days <span>ago</span>. (Eu telefonei para você três dias atrás)</p>
+				<p class="explica2"><span>></span> She studied math  <span>yesterday.</span> (Ela estudou matemática ontem à noite)</p>
+				<p class="explica2"><span>></span> They visited their uncle <span>last month.</span> (Eles visitaram o tio deles mês passado)</p>
+				
+				<div class="divisao3">
+					<p class="titulo2">ATTENTION THE RULES</p>
+					<p class="traducao">(atenção às regras)</p>
+					<div class="divisao3">
+						<p class="explica2"><span>1- </span>Para os verbos regulares com terminação  <span>e</span> acrescenta-se <span>d</span> ao final dos verbos.</p>
+						<p class="exemplo">Exemples:</p>
+						<p class="explica2">to love <span>></span> loved (amar)</p>
+						<p class="explica2">to compare <span>></span> compared (comparar)</p>
+						<p class="explica2">to lie <span>></span> lied (mentir)</p>
+						<p class="exemplo">Exemples:</p>
+						<p class="explica"><span>></span> He <span>lied</span> to me. (Ele mentiu pra mim)</p>
+						<p class="explica"><span>></span> They <span>visited</span> their uncle last month. (Eles visitaram o tio deles mês passado)</p>
+					</div>
+
+					<div class="divisao3">
+						<p class="explica2"><span>2- </span>Para os verbos regulares com terminação em <span>consoante + vogal + consoante (CVC)</span> dobra-se a última consoante e acrescenta-se <span>ed</span> ao final.</p>
+						<p class="exemplo">Exemples:</p>
+						<p class="explica2">to stop <span>></span> stopped (parar)</p>
+						<p class="explica2">to control <span>></span> controlled (controlar)</p>
+						<p class="explica2">to plan <span>></span> planned (planejar)</p>
+						<p class="exemplo">Exemples:</p>
+						<p class="explica"><span>></span> I <span>planned</span> this trip for many years. (Eu planejei essa viagem por muitos anos)</p>
+						<p class="explica"><span>></span> Yesterday she <span>preferred</span> to study math than biology. (Ontem ela preferiu estudar matemática do que biologia)</p>
+					</div>
+
+					<div class="divisao3">
+						<p class="explica2"><span>3- </span>Para os verbos terminados em <span>y precedido de consoante</span> retira-se o y e acrescenta-se <span>ied</span> ao final.</p>
+						<p class="exemplo">Exemples:</p>
+						<p class="explica2">to study <span>></span> studied (estudar)</p>
+						<p class="explica2">to worry <span>></span> worried (preocupar-se)</p>
+						<p class="explica2">to cry <span>></span> cried (chorar)</p>
+						<p class="exemplo">Exemples:</p>
+						<p class="explica"><span>></span> We <span>cried</span> after the math test. (Nós choramos depois da prova de inglês)</p>
+						<p class="explica"><span>></span> She <span>tried</span> to do this exercise. (Ela tentou fazer esse exercício)</p>
+					</div>
+
+					<div class="divisao3">
+						<p class="explica2"><span>4- </span>Para os verbos terminados em <span>y precedido de vogal</span> acrescenta-se somente <span>ed</span> ao final.</p>
+						<p class="exemplo">Exemples:</p>
+						<p class="explica2">to enjoy <span>></span> enjoyed (curtir/aproveitar)</p>
+						<p class="explica2">to stay <span>></span> stayed (parar)</p>
+						<p class="explica2">to play <span>></span> played (brincar/jogar)</p>
+						<p class="exemplo">Exemples:</p>
+						<p class="explica"><span>></span> We <span>played</span> soccer this morning. (Nós jogamos futebol essa manhã)</p>
+						<p class="explica"><span>></span> She <span>enjoyed</span> her birthday party. (Ela curtiu a festa de aniversário dela)</p>
+					</div>
+				</div>
+
+				<div class="divisao3">
+					<p class="titulo2">AFFIRMATIVE FORM</p>
+					<p class="traducao">(forma afirmativa)</p>
+					<p class="explica2">A construção do Simple Past na forma afirmativa deve ser da seguinte forma:</p>
+					<p class="modelo2">Sujeito + verbo no passado + complemento</p>
+					<div class="divisao3">
+						<p class="explica2">Para conjugar um verbo no Simple Past, é necessário deixar na forma do passado, para isso deve-se ver se ele é regular ou irregular. Além de que deve-se seguir as regras caso ele seja regular.</p>
+						<div class="tabelas">
+							<p><img class="tabela6" src="img/verbosregulares.png"></p>
+							<p><img class="tabela6" src="img/verbosirregulares.png"></p>
+						</div>
+						<p class="exemplo">Exemples:</p>
+						<p class="explica2">She <span>ate</span> my cake this morning. (Ela comeu meu bolo essa manhã)</p>
+						<p class="explica2">They <span>went</span> to the beach last week. (Eles foram para praia semana passada)</p>
+						<p class="explica2">I <span>agreed</span> with her choose. (Eu concordei com a escolha dela)</p>
+					</div>
+				</div>
+
+				<div class="divisao3">
+					<p class="titulo2">NEGATIVE FORM</p>
+					<p class="traducao">(forma negativa)</p>
+					<p class="explica2">A construção do Simple Past na forma negativa deve ser da seguinte forma:</p>
+					<p class="modelo2">Sujeito + verbo auxiliar + not + verbo no infinitivo + complemento</p>
+
+					<div class="divisao3">
+						<p class="explica2">A forma negativa do Simple Past é formada com o uso do verbo auxiliar <span>did.</span></p>
+						<p class="explica2"><span>Did: </span> Usado para todos os pronomes (I, you, he, she, it, we, they).</p>
+						<p class="exemplo">Com o uso do auxiliar <span>did</span> não é necessário conjugar o verbo no passado, por isso ele sempre fica no infinitivo, sendo regular ou irregular.</p>
+						<p class="explica2">As frases negativas podem ser escritas na forma completa ou abreviada:</p>
+						<p class="explica">Did not <span>></span> Didn't</p>
+						<p class="exemplo">Exemples:</p>
+						<p class="explica2">I <span> did not</span> live in Brazil last year. (Eu não morava no Brasil ano passado)</p>
+						<p class="explica2">He <span>didn't</span> like the English teacher. (Ele não gostou da professora de inglês)</p>
+					</div>
+				</div>
+
+				<div class="divisao3">
+					<p class="titulo2">INTERROGATIVE FORM</p>
+					<p class="traducao">(forma interrogativa)</p>
+					<p class="explica2">A construção do Simple Past na forma interrogativa deve ser da seguinte forma:</p>
+					<p class="modelo2">Verbo auxiliar + sujeito + verbo no infinitivo + complemento + ?</p>
+
+					<div class="divisao3">
+						<p class="explica2">A forma interrogativa do Simple Past é formada com o uso do verbo auxiliar <span>did</span> assim como na forma negativa.</p>
+						<p class="explica2"><span>Did: </span> Usado para todos os pronomes (I, you, he, she, it, we, they).</p>
+						<p class="exemplo">Com o uso do auxiliar <span>did</span> não é necessário conjugar o verbo no passado, por isso ele sempre fica no infinitivo, sendo regular ou irregular.</p>
+						<p class="exemplo">Exemples:</p>
+						<p class="explica2"><span>Did</span> you go to the supermarket this week? (Você foi no mercado essa semana?)</p>
+						<p class="explica2"><span>Did</span> she call him? (Ela ligou para ele?)</p>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="voltar"><a href="#semestre2" onclick="troca('semestre2')">COME BACK</a></div>
+				<div class="goexerc"><a href="#exercicio2" onclick="troca('exercicio2')">QUIZ</a></div>
+			</div>
+		</div>
+
+
+		<div id="futuresimple" class="invisivel">
+			<div class="alltop">
+				<div class="voltar"><a href="#semestre2" onclick="troca('semestre2')">COME BACK</a></div>
+				<p><img class="cont" src="img/simplefuture.png"></p>
+			</div>
+
+			<div class="texto">
+				<p class="explica2">
+				Usa-se o Simple Future quando queremos expressar eventos futuros que supostamente irão acontecer, sem uma total certeza. Para evidenciar estes casos, usa-se expressões temporais nas frases.</p>
+				<p class="divisao3"><img class="tabela3" src="img/will.png"></p>
+				
+				<div class="divisao3">
+					<p class="titulo2">WILL</p>
+					<p class="explica2">Usamos o modal auxiliary <span>will</span> na construção das frases no Simple Future juntamente com o verbo no infinitivo sem o to. O will expressa uma situação mais informal.</p>
+				</div>
+
+				<div class="divisao3">
+					<p class="titulo2">AFFIRMATIVE FORM</p>
+					<p class="traducao">(forma afirmativa)</p>
+					<p class="explica2">A construção do Simple Future com o <span>will</span> na forma afirmativa deve ser da seguinte forma:</p>
+					<p class="modelo2">Sujeito + will + verbo no infinitivo + complemento</p>
+					<div class="divisao3">
+						<p class="exemplo">Exemples:</p>
+						<p class="explica2">She <span>will</span> cook the dinner. (Ela cozinhará o jantar)</p>
+						<p class="explica2">They <span>will</span> go to my house. (Eles virão para minha casa)</p>
+						<p class="explica2">I <span>will</span> do dance classes. (Eu farei aulas de dança)</p>
+					</div>
+				</div>
+
+				<div class="divisao3">
+					<p class="titulo2">NEGATIVE FORM</p>
+					<p class="traducao">(forma negativa)</p>
+					<p class="explica2">A construção do Simple Future com o <span>will</span> na forma negativa deve ser da seguinte forma:</p>
+					<p class="modelo2">Sujeito + will + not + verbo no infinitivo + complemento</p>
+					<div class="divisao3">
+						<p class="explica2">As frases negativas podem ser escritas na forma completa ou abreviada:</p>
+						<p class="explica">Will not <span>></span> Won't</p>
+						<p class="exemplo">Exemples:</p>
+						<p class="explica2">I <span> will not</span> do my homework. (Eu não farei minha tarefa)</p>
+						<p class="explica2">He <span>won't</span> study English at the United States. (Ele não esturá inglês nos Estados Unidades)</p>
+					</div>
+				</div>
+
+				<div class="divisao3">
+					<p class="titulo2">INTERROGATIVE FORM</p>
+					<p class="traducao">(forma interrogativa)</p>
+					<p class="explica2">A construção do Simple Future com o <span>will</span> na forma interrogativa deve ser da seguinte forma:</p>
+					<p class="modelo2">Will + sujeito + verbo no infinitivo + complemento + ?</p>
+					<div class="divisao3">
+						<p class="exemplo">Exemples:</p>
+						<p class="explica2"><span>Will</span> you go to the supermarket this week? (Você irá no mercado essa semana?)</p>
+						<p class="explica2"><span>Will</span> she call him? (Ela ligará para ele?)</p>
+					</div>
+				</div>
+
+				<div class="divisao3">
+					<p class="titulo2">SHALL</p>
+					<p class="explica2">Usamos o modal auxiliary <span>shall</span> na construção das frases no Simple Future juntamente com o verbo no infinitivo sem o to, assim como o will. O shall expressa uma situação mais formal, por isso é menos utilizados.</p>
+				</div>
+
+				<div class="divisao3">
+					<p class="titulo2">AFFIRMATIVE FORM</p>
+					<p class="traducao">(forma afirmativa)</p>
+					<p class="explica2">A construção do Simple Future com o <span>shall</span> na forma afirmativa deve ser da seguinte forma:</p>
+					<p class="modelo2">Sujeito + shall + verbo no infinitivo + complemento</p>
+					<div class="divisao3">
+						<p class="exemplo">Exemples:</p>
+						<p class="explica2">She <span>shall</span> write a report. (Ela escreverá um relatório)</p>
+						<p class="explica2">They <span>shall</span> go to the meeting. (Eles irão no encontro)</p>
+						<p class="explica2">We <span>shall</span> decide after the conference. (Nós decidiremos depois da conferência)</p>
+					</div>
+				</div>
+
+				<div class="divisao3">
+					<p class="titulo2">NEGATIVE FORM</p>
+					<p class="traducao">(forma negativa)</p>
+					<p class="explica2">A construção do Simple Future com o <span>shall</span> na forma negativa deve ser da seguinte forma:</p>
+					<p class="modelo2">Sujeito + shall + not + verbo no infinitivo + complemento</p>
+					<div class="divisao3">
+						<p class="explica2">As frases negativas podem ser escritas na forma completa ou abreviada:</p>
+						<p class="explica">Shall not <span>></span> Shan't</p>
+						<p class="exemplo">Exemples:</p>
+						<p class="explica2">She <span> shall not</span> write a letter. (Ela não escreverá uma carta)</p>
+						<p class="explica2">He <span>shan't</span> study English at the United States. (Ele não esturá inglês nos Estados Unidades)</p>
+					</div>
+				</div>
+
+				<div class="divisao3">
+					<p class="titulo2">INTERROGATIVE FORM</p>
+					<p class="traducao">(forma interrogativa)</p>
+					<p class="explica2">A construção do Simple Future com o <span>shall</span> na forma interrogativa deve ser da seguinte forma:</p>
+					<p class="modelo2">Shall + sujeito + verbo no infinitivo + complemento + ?</p>
+					<div class="divisao3">
+						<p class="exemplo">Exemples:</p>
+						<p class="explica2"><span>Shall</span> you buy a new company? (Você comprará uma nova empresa?)</p>
+						<p class="explica2"><span>Shall</span> she call him? (Ela ligará para ele?)</p>
+					</div>
+				</div>
+			</div>
+
+			<div>
+				<div class="voltar"><a href="#semestre2" onclick="troca('semestre2')">COME BACK</a></div>
+				<div class="goexerc"><a href="#exercicio2" onclick="troca('exercicio2')">QUIZ</a></div>
+			</div>
+		</div>
+
+		<div id="futureimediate" class="invisivel">
+			<div class="alltop">
+				<div class="voltar"><a href="#semestre2" onclick="troca('semestre2')">COME BACK</a></div>
+				<p><img class="cont" src="img/immedietefuture.png"></p>
+			</div>
+
+			<div class="texto">
+				<p class="explica2">Usa-se o Future Immediate quando queremos expressar eventos que vão acontecer imediatamente,  em um futuro próximo, com uma total certeza.</p>
+				<p class="exemplo">Usa-se algumas expressões temporais para indicar a frequência de uma ação, as mais usados são:</p>
+				<p class="divisao3"><img class="tabela3" src="img/goingto.png"></p>
+				<p class="exemplo">Exemples:</p>
+				<p class="explica2"><span>></span> They are going to arrive later <span>today</span>. (Eles chegarão mais tarde hoje)</p>
+				<p class="explica2"><span>></span> I am going to work <span>tomorrow.</span> (Eu irei trabalhar amanhã)</p>
+				<p class="explica2"><span>></span> I'm going to take a shower <span>before</span> dinner. (Vou tomar um banho antes de jantar)</p>
+				
+				<div class="divisao3">
+					<p class="titulo2">GOING TO</p>
+					<p class="explica2">Usamos <span>going to</span> na construção das frases no Immediate Future juntamente com o verbo no infinitivo sem o to. Ao contrário do <span>will</span>, o going to expressa eventos que vão acontecer com total certeza.</p>
+				</div>
+
+				<div class="divisao3">
+					<p class="titulo2">AFFIRMATIVE FORM</p>
+					<p class="traducao">(forma afirmativa)</p>
+					<p class="explica2">A construção do Immediate Future na forma afirmativa deve ser da seguinte forma:</p>
+					<p class="modelo2">Sujeito + verbo to be + going to + verbo principal no infinitivo + complemento</p>
+
+					<div class="divisao3">
+						<p class="exemplo">Exemples:</p>
+						<p class="explica2">You are <span>going to</span> go to my house. (Você irá para minha casa)</p>
+						<p class="explica2">We are <span>going to</span> spend our vacation in Paris. (Vamos passar nossas férias em Paris)</p>
+						<p class="explica2">My mother is <span>going to</span> take me to the school today. (Minha mãe vai me levar para escola hoje)</p>
+					</div>
+				</div>
+
+				<div class="divisao3">
+					<p class="titulo2">NEGATIVE FORM</p>
+					<p class="traducao">(forma negativa)</p>
+					<p class="explica2">A construção do Immediate Future na forma negativa deve ser da seguinte forma:</p>
+					<p class="modelo2">Sujeito + verbo to be + not + going to + verbo principal no infinitivo</p>
+
+					<div class="divisao3">
+						<p class="exemplo">Exemples:</p>
+						<p class="explica2">They are not <span>going to</span> come. (Eles não vão vir)</p>
+						<p class="explica2">I'm not <span>going to</span> to talk to you until you apologize for what you have done. (Não vou falar com você até você se desculpar pelo que fez)</p>
+						<p class="explica2">I'm not <span>going to</span> to have any difficulty to do that. (Não vou ter nenhuma dificuldade para fazer isto)</p>
+					</div>
+				</div>
+
+				<div class="divisao3">
+					<p class="titulo2">INTERROGATIVE FORM</p>
+					<p class="traducao">(forma interrogativa)</p>
+					<p class="explica2">A construção do Immediate Future na forma interrogativa deve ser da seguinte forma:</p>
+					<p class="modelo2"> Verbo to be + sujeito + going to + verbo principal no infinitivo</p>
+
+					<div class="divisao3">
+						<p class="exemplo">Exemples:</p>
+						<p class="explica2">Are they <span>going to</span> help us? (Eles vão nos ajudar?)</p>
+						<p class="explica2">What are you <span>going to</span> do next weekend? (O que você vai fazer no próximo final de semana?)</p>
+						<p class="explica2">Is he <span>going to</span> stay here? (Ele vai ficar aqui?)</p>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="voltar"><a href="#semestre2" onclick="troca('semestre2')">COME BACK</a></div>
+				<div class="goexerc"><a href="#exercicio2" onclick="troca('exercicio2')">QUIZ</a></div>
+			</div>
+		</div>
+
+
+
+
+
+
+		<div id="exercicio1" class="invisivel">
+			<div class="alltop">
+				<div class="voltar"><a href="#extras" onclick="troca('extras')">COME BACK</a></div>
+				<p><img class="seme" src="img/semestre1.png"></p>
+			</div>
+			<div class="texto">
+				<div class="divisao">
+					<p class="enunciado">Responda o quiz equivalente aos conteúdos do 1° Semestre. Deseja revisar algum conteúdo?
+					<a class="link" href="#semestre1" onclick="troca('semestre1')"><span>Clique aqui</span></a></p>
+				</div>
+				<div class="divisao">
+					<div class="exercicio">
+						<p class="exerc">Complete with the correct alternative:</p>
+						<p><span>1-</span> She ___________ to the mall.</p>
+						<div class="allalternativa">
+							<div><button id="a1" class="alternativa" onclick="certa(this.id, 0)">is going</button></div>
+							<div><button id="a2" class="alternativa" onclick="certa(this.id, 0)">are going</button></div>
+							<div><button id="a3" class="alternativa" onclick="certa(this.id, 0)">were going</button></div>
+						</div>
+
+						<p><span>2-</span> They ___________ to the mall.</p>
+						<div class="allalternativa">
+							<div><button id="b1" class="alternativa" onclick="certa(this.id, 1)">is going</button></div>
+							<div><button id="b2" class="alternativa" onclick="certa(this.id, 1)">are going</button></div>
+							<div><button id="b3" class="alternativa" onclick="certa(this.id, 1)">was going</button></div>
+						</div>
+
+						<p><span>3-</span> Mary and John ___________ for the math test yesterday.</p>
+						<div class="allalternativa">
+							<div><button id="c1" class="alternativa" onclick="certa(this.id, 2)">were studying</button></div>
+							<div><button id="c2" class="alternativa" onclick="certa(this.id, 2)">was study</button></div>
+							<div><button id="c3" class="alternativa" onclick="certa(this.id, 2)">were study</button></div>
+						</div>
+
+						<p><span>4-</span> Take these books and put _____ in the table.</p>
+						<div class="allalternativa">
+							<div><button id="d1" class="alternativa" onclick="certa(this.id, 3)">it</button></div>
+							<div><button id="d2" class="alternativa" onclick="certa(this.id, 3)">them</button></div>
+							<div><button id="d3" class="alternativa" onclick="certa(this.id, 3)">their</button></div>
+						</div>
+
+						<p><span>5-</span> Do you want _________ apple?</p>
+						<div class="allalternativa">
+							<div><button id="e1" class="alternativa" onclick="certa(this.id, 4)">a</button></div>
+							<div><button id="e2" class="alternativa" onclick="certa(this.id, 4)">these</button></div>
+							<div><button id="e3" class="alternativa" onclick="certa(this.id, 4)">an</button></div>
+						</div>
+
+						<p><span>6-</span> He is the man _________ runs very fast.</p>
+						<div class="allalternativa">
+							<div><button id="f1" class="alternativa" onclick="certa(this.id, 5)">who</button></div>
+							<div><button id="f2" class="alternativa" onclick="certa(this.id, 5)">what</button></div>
+							<div><button id="f3" class="alternativa" onclick="certa(this.id, 5)">when</button></div>
+						</div>
+
+						<p><span>7-</span>  _________ bikes are mine.</p>
+						<div class="allalternativa">
+							<div><button id="g1" class="alternativa" onclick="certa(this.id, 6)">these</button></div>
+							<div><button id="g2" class="alternativa" onclick="certa(this.id, 6)">that</button></div>
+							<div><button id="g3" class="alternativa" onclick="certa(this.id, 6)">this</button></div>
+						</div>
+
+						<p><span>8-</span> I won the _________ place in the competition.</p>
+						<div class="allalternativa">
+							<div><button id="h1" class="alternativa" onclick="certa(this.id, 7)">eight</button></div>
+							<div><button id="h2" class="alternativa" onclick="certa(this.id, 7)">first</button></div>
+							<div><button id="h3" class="alternativa" onclick="certa(this.id, 7)">thirth</button></div>
+						</div>
+
+						<p><span>9-</span> What is the 25 ordinal number?</p>
+						<div class="allalternativa">
+							<div><button id="i1" class="alternativa" onclick="certa(this.id, 8)">twenty-five</button></div>
+							<div><button id="i2" class="alternativa" onclick="certa(this.id, 8)">twenty-fivth</button></div>
+							<div><button id="i3" class="alternativa" onclick="certa(this.id, 8)">twenty-fifth</button></div>
+						</div>
+
+						<p><span>10-</span> She can do it by _________ .</p>
+						<div class="allalternativa">
+							<div><button id="j1" class="alternativa" onclick="certa(this.id, 9)">herself</button></div>
+							<div><button id="j2" class="alternativa" onclick="certa(this.id, 9)">yourself</button></div>
+							<div><button id="j3" class="alternativa" onclick="certa(this.id, 9)">her</button></div>
+						</div>
+
+						<div><button class="submit1" onclick="mostrar()">Submit</button></div>
+						<div><button class="submit1" type="submit" onclick="again()">Try again</button></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div id="myModal" class="modal">
+		  <div class="modal-content">
+		    <span class="close">&times;</span>
+		    <p class="titulo2">CONGRATULATIONS!</p>
+		    <div class="pont">
+		    	<p class="pontuacao">Your score is </p>
+		    	<span id="score"></span>
+		    </div>
+		  </div>
+		</div>
+
+	<script type="text/javascript" src="js.js"></script>
+	<script type="text/javascript" src="modal.js"></script>
+	<script type="text/javascript" src="troca.js"></script>
+
 
 	</main>	
 </body>
